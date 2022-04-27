@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <title>Sistema de logueo</title>
+</head>
+<body>
+  
+  <nav class="navbar navbar-expand-lg navbar-light  bg-white">
+    <div class="container-fluid">
+      <img id="brandImg" src="img/logo.png" class="navbar-brand" alt="">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div  class="collapse navbar-collapse" style="flex-direction: row-reverse;" id="navbarNavDropdown">
+        <ul class="navbar-nav ">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Whatch</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Share</a>
+          </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"aria-current="page" href="#">Rewards</a>
+          </li>
+          <li id="loginButton " class="nav-item ">
+            <button class="btn btn-primary brandBackColor">Join Or Log in</button>
+          </li>
+        </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  
+
+   
+      </nav>
+      <section class="gradient">
+        <div class="container">
+        <div class="row justify-content-md-center pt-5" >
+        <div class="col-12 col-md-4">
+            <h4 class="title text-center mb-3">Login</h4>
+            <form action="" onsubmit="login()">
+
+              <div class="mb-3">
+                <input required type="email" class="form-control" id="loginUser" aria-describedby="emailHelp" placeholder="email or username">
+            </div>
+            <div class="mb-3">
+              <input required type="password" class="form-control" id="loginPassword" placeholder="password">
+            </div >
+            <a  type="button" class="restorePass mb-3" data-bs-toggle="modal" data-bs-target="#restorePassModal">Forgot?</a> 
+            <div>
+
+              <button id="SingInButton" type="submit" class="btn btn-primary" >
+                Sing In 
+              </button>
+            </form>
+            
+            </div>
+            <p class="restorePass brandTextColor"> By signing in to Discoins. you agree to our <br><b>Terms</b> and <b>Privacy Policy</b></br></p> 
+            <div class="orContainer">
+
+              <span class="line-efects brandTextColor">or</span>
+            </div>
+
+
+      </div>
+      <div class="footer">
+
+        <p class="brandTextColor"> 2021 DISCOINS Inc. All rights reserved. About For Advertisers For Advertising Agencies Privacy Policy</p>
+      </div>
+      <div class="col-12"></div>
+      <div class="d-grid gap-2 col-12 col-md-4">
+        
+          <div class="row">
+            <div class="col-12 col-md-6">
+        <button class="btn btn-light" style="width: 100%;" type="button"><b>Facebook</b></button>
+              
+            </div>
+            <div class="col-12 col-md-6">
+        <button class="btn btn-light"  style="width: 100%;" type="button">Google</button>
+
+            </div>
+          </div>
+      </div>
+    </section>
+        <!-------------- Modals ---------------->
+
+        <!-- restore pass modal  -->
+        <div class="modal fade" id="restorePassModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Recuperar Contraseña</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="mb-3">
+
+                <input type="email" class="form-control" id="restorePassEmail" aria-describedby="emailHelp" placeholder="email">
+
+              </div >
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary">Enviar</button>
+            </div>
+            </div>
+        </div>
+        </div>
+        <!-- userLogin modal  -->
+        <div class="modal fade" id="user" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Recuperar Contraseña</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="mb-3">
+  
+                  <input type="email" class="form-control" id="restorePassEmail" aria-describedby="emailHelp" placeholder="email">
+  
+                </div >
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                  <button type="button" class="btn btn-primary">Enviar</button>
+              </div>
+              </div>
+          </div>
+          </div>
+
+
+
+          
+
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+ <script src="index.js"></script>
+</body>
+</html>

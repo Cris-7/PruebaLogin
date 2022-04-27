@@ -1,0 +1,111 @@
+html{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: auto;
+}
+
+
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: url(img/img2.jpeg);   
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    position: relative;    
+}
+.gradient{
+    background: rgb(114,183,87);
+    background: linear-gradient(90deg, rgba(114,183,87,0.10547969187675066) 0%, rgba(114,183,87,0.2819502801120448) 0%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.brandTextColor{
+    color: #72b757 !important;
+}
+
+.brandBackColor{
+    background-color: #72b757 !important;
+}
+
+#brandImg{
+    max-width: 200px;
+}
+
+.nav-item, a{
+    font-weight: 700;
+}
+
+#loginButton{
+    border-color: #72b757 !important; 
+    outline: none;
+}
+.title{
+    color: #72b757;
+    text-transform: uppercase;
+
+}
+
+.restorePass{
+    text-align: right;
+    display: block;
+    color: #010101;
+    text-decoration: none;
+    font-size: small;
+    font-weight: 300;
+}
+
+#SingInButton{
+    width: 100% !important;
+}
+
+.btn{
+    background-color: #72b757 !important;
+    border-color: #72b757 !important;
+}
+.btn-light{
+    background-color: #e9ecef !important;
+    color: #72b757 !important;
+}
+.orContainer{
+    position: relative;
+    text-align: center;
+}
+
+.line-efects::after {
+    content: "";
+    height: 1px;
+    width: 160px;
+    background-color: #72b757;
+    display: block;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translate(-100%, 50%);
+  }
+
+  .line-efects::before {
+    content: "";
+    height: 1px;
+    width: 160px;
+    background-color: #72b757;
+    display: block;
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    transform: translate(100%, 50%);
+
+  }
+
+
+  .footer{
+      position: absolute;
+      bottom: 30px;
+      text-align: center;
+     
+  }
